@@ -1,0 +1,142 @@
+.controller.custom{
+    background: transparent;
+    top: 0;
+    left: 0;
+}
+.custom.disconnected div {
+    display: none;
+}
+.custom .bumpers{
+    width: 775px;
+    height: 40px;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+}
+.custom .bumper{
+    width: 195px;
+    height: 34px;
+    background: #606060;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.custom .bumper.pressed{
+    background: white;
+}
+.custom .bumper.left{
+    float: left;
+}
+.custom .bumper.right{
+    float: right;
+}
+.custom .arrows{
+    position: absolute;
+    width: 198px;
+    height: 62px;
+    top: 230px;
+    left: 366px;
+}
+.custom .back, .custom .start{
+    width: 80px;
+    height: 25px;
+    background: #606060;
+    border: 3px solid black;
+    border-radius: 20px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+}
+.custom .back.pressed, .custom .start.pressed{
+    background: white;
+}
+.custom .back{
+    float: left;
+}
+.custom .start{
+    float: right;
+}
+/* Positioning and size of the container for the face buttons */
+.custom .abxy{
+    position: absolute;
+    width: 259px;
+    height: 218px;
+    top: 105px;
+    left: 633px;
+}
+/* base class used to simplify the sprite mapping */
+.custom .button{
+    position: absolute;
+    width:75px;
+    height:75px;
+    border-radius: 40px;
+    border: 3px solid black;
+}
+.custom .button.pressed {
+    background: white;
+}
+.custom .a {
+    top: 71px;
+    right: 0px;
+    background: red;
+}
+.custom .b {
+    top: 143px;
+    left: 92px;
+    background: gold;
+}
+.custom .x {
+    left: 92px;
+    background: blue;
+}
+.custom .y {
+    top: 71px;
+    background: forestgreen;
+}
+.custom .dpad {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 105px;
+    left: 90px;
+}
+.custom .face {
+    width: 60px;
+    height: 60px;
+    background: #606060;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.custom .face.up {
+    top: 12px;
+    left: 66px;
+}
+.custom .face.down {
+    top: 144px;
+    left: 66px;
+}
+.custom .face.left {
+    top: 78px;
+    left: 0px;
+}
+.custom .face.right {
+    top: 78px;
+    left: 132px;
+}
+.custom .face.pressed {
+    background: white;
+}
+.stick {
+    width: 0;
+    height: 0;
+    display: none;
+}
+/* NOTE: You NEED to set this to exactly half the height of what is listed
+for '.controller.custom' so when your skin is activated via player selection
+parameters (e.g. http://mrmcpowned.com/gamepad?p=1) it will be correctly
+centered on screen. */
+.custom.half{
+    margin-top: -212px;
+}
+
+/* This file is my backup for this guy */
+/* https://github.com/Tesserex/gamepadviewer */
